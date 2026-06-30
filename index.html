@@ -1,521 +1,256 @@
-/* ==========================================
-   NV BEAUTY
-   Premium Theme
-========================================== */
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-:root{
+<head>
 
-    --primary:#b78b48;
-    --secondary:#f7f4ef;
-    --dark:#1d1d1d;
-    --light:#ffffff;
-    --gray:#666;
-    --radius:18px;
-    --shadow:0 18px 40px rgba(0,0,0,.10);
-    --transition:.35s ease;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-}
+<title>Naiara Valério Beauty</title>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<meta name="description" content="Nanopigmentação de sobrancelhas, Brow Lamination, Micropigmentação Labial e cursos profissionais.">
 
-html{
-    scroll-behavior:smooth;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-body{
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    font-family:'Poppins',sans-serif;
+<link rel="stylesheet" href="style.css">
 
-    background:#faf8f5;
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    color:var(--dark);
+</head>
 
-    line-height:1.7;
+<body>
 
-}
+<header>
 
-/*==========================
-HEADER
-==========================*/
+<nav>
 
-header{
+<div class="logo">
+NV Beauty
+</div>
 
-    position:fixed;
+<ul>
 
-    width:100%;
+<li><a href="#sobre">Sobre</a></li>
 
-    top:0;
+<li><a href="#procedimentos">Procedimentos</a></li>
 
-    left:0;
+<li><a href="#cursos">Cursos</a></li>
 
-    z-index:999;
+<li><a href="#contato">Contato</a></li>
 
-    backdrop-filter:blur(18px);
+</ul>
 
-    background:rgba(255,255,255,.75);
+</nav>
 
-    box-shadow:0 3px 20px rgba(0,0,0,.05);
+</header>
 
-}
+<section class="hero">
 
-nav{
+<div class="hero-image">
 
-    max-width:1200px;
+<img src="foto1.jpg" alt="Naiara Valério">
 
-    margin:auto;
+</div>
 
-    padding:20px 30px;
+<div class="hero-text">
 
-    display:flex;
+<h1>Naiara Valério</h1>
 
-    justify-content:space-between;
+<h2>Beauty Academy</h2>
 
-    align-items:center;
+<p>
 
-}
+Especialista em Nanopigmentação,
+Brow Lamination,
+Micropigmentação Labial
+e Formação Profissional.
 
-.logo{
+</p>
 
-    font-size:1.7rem;
+<a
+href="https://wa.me/5512997571809"
+class="btn">
 
-    font-weight:700;
+Agende pelo WhatsApp
 
-    color:var(--primary);
+</a>
 
-    letter-spacing:1px;
+<div class="social">
 
-}
+<a href="https://instagram.com/naiaramicropigmentacao">
 
-nav ul{
+<i class="fab fa-instagram"></i>
 
-    display:flex;
+</a>
 
-    list-style:none;
+<a href="https://tiktok.com/@naiaramicropigmentacao">
 
-    gap:40px;
+<i class="fab fa-tiktok"></i>
 
-}
+</a>
 
-nav a{
+<a href="https://youtube.com/@NaiaraValerioBeauty">
 
-    color:var(--dark);
+<i class="fab fa-youtube"></i>
 
-    text-decoration:none;
+</a>
 
-    font-weight:500;
+<a href="https://facebook.com/naiaravaleriomicropigmentacao">
 
-    transition:var(--transition);
+<i class="fab fa-facebook"></i>
 
-}
+</a>
 
-nav a:hover{
+</div>
 
-    color:var(--primary);
+</div>
 
-}
+</section>
 
-/*==========================
-HERO
-==========================*/
+<section id="sobre">
 
-.hero{
+<h2>Sobre</h2>
 
-    min-height:100vh;
+<p>
 
-    display:flex;
+A NV Beauty oferece tratamentos modernos para realçar sua beleza natural e cursos completos para quem deseja se tornar referência na área da beleza.
 
-    align-items:center;
+</p>
 
-    justify-content:center;
+</section>
 
-    gap:70px;
+<section id="procedimentos">
 
-    padding:130px 10% 70px;
+<h2>Procedimentos</h2>
 
-    background:
+<div class="cards">
 
-    linear-gradient(135deg,#ffffff,#f5efe6);
+<div class="card">
 
-}
+<img src="foto2.jpg">
 
-.hero-image{
+<h3>Nanopigmentação</h3>
 
-    flex:1;
+<p>
 
-    display:flex;
+Resultado natural fio a fio.
 
-    justify-content:center;
+</p>
 
-}
+</div>
 
-.hero-image img{
+<div class="card">
 
-    width:390px;
+<img src="foto4.jpg">
 
-    border-radius:30px;
+<h3>Brow Lamination</h3>
 
-    box-shadow:var(--shadow);
+<p>
 
-    transition:.6s;
+Alinhamento dos fios.
 
-}
+</p>
 
-.hero-image img:hover{
+</div>
 
-    transform:scale(1.03);
+<div class="card">
 
-}
+<img src="foto5.jpg">
 
-.hero-text{
+<h3>Micropigmentação Labial</h3>
 
-    flex:1;
+<p>
 
-    display:flex;
+Realce da cor natural.
 
-    flex-direction:column;
+</p>
 
-    justify-content:center;
+</div>
 
-}
+</div>
 
-.hero-text h1,
-.hero-text h2,
-.hero-text p{
+</section>
 
-    text-align:center;
+<section id="cursos">
 
-}
+<h2>Aprenda o Método NV</h2>
 
-.hero-text .btn{
+<div class="cards">
 
-    align-self:center;
-    margin-top: 30px;
+<a class="card"
 
-}
+href="https://hotmart.com/pt-br/marketplace/produtos/design-de-sobrancelha-metodo-nv-naiara-valerio-beauty/E101932779M?sck=HOTMART_PRODUCT_PAGE">
 
+<h3>Curso Design de Sobrancelhas</h3>
 
-/*==========================
-BOTÃ•ES
-==========================*/
+</a>
 
-.btn{
+<a class="card"
 
-    display:inline-block;
+href="https://hotmart.com/pt-br/marketplace/produtos/brow-lamination-nv/H102878327J">
 
-    padding:16px 34px;
+<h3>Curso Brow Lamination</h3>
 
-    border-radius:50px;
+</a>
 
-    background:linear-gradient(135deg,#c9a15b,#9f783b);
+<a class="card"
 
-    color:#fff;
+href="https://hotmart.com/pt-br/marketplace/produtos/metodo-nv-nanopigmentacao-por-naiara-valerio/O106120668N?sck=HOTMART_PRODUCT_PAGE">
 
-    text-decoration:none;
+<h3>Curso Nanopigmentação</h3>
 
-    font-weight:600;
+</a>
 
-    transition:.35s;
+</div>
 
-    box-shadow:0 10px 30px rgba(183,139,72,.35);
+</section>
 
-}
+<section id="contato">
 
-.btn:hover{
+<h2>Contato</h2>
 
-    transform:translateY(-4px);
+<a class="btn"
 
-    box-shadow:0 18px 40px rgba(183,139,72,.45);
+href="https://wa.me/5512997571809">
 
-}
+Falar pelo WhatsApp
 
-/*==========================
-SOCIAL
-==========================*/
+</a>
 
-.social{
+<div class="mapas">
 
-    display:flex;
+<a href="https://maps.app.goo.gl/GqJd3cvNmL9jxEpP9">
 
-    justify-content:center;
+Google Maps
 
-    align-items:center;
+</a>
 
-    flex-wrap:wrap;
+<a href="https://ul.waze.com/ul?place=ChIJyfZumHJXzJQRx8m3AX7mdq8&ll=-23.02383380%2C-45.58502130">
 
-    gap:18px;
+Waze
 
-    margin-top:35px;
+</a>
 
-}
+</div>
 
-.social a{
+</section>
 
-    width:48px;
+<footer>
 
-    height:48px;
+<p>
 
-    border-radius:50%;
+© 2026 NV Beauty
 
-    background:white;
+</p>
 
-    display:flex;
+</footer>
 
-    align-items:center;
+<script src="script.js"></script>
 
-    justify-content:center;
+</body>
 
-    text-decoration:none;
-
-    color:var(--primary);
-
-    box-shadow:var(--shadow);
-
-    transition:.3s;
-
-    font-size:1.2rem;
-
-}
-
-.social a:hover{
-
-    background:var(--primary);
-
-    color:white;
-
-    transform:translateY(-5px);
-
-}
-
-/*==========================
-SECTIONS
-==========================*/
-
-section{
-
-    padding:90px 10%;
-
-}
-
-section h2{
-
-    text-align:center;
-
-    font-size:2.4rem;
-
-    margin-bottom:20px;
-
-}
-
-section>p{
-
-    max-width:800px;
-
-    margin:auto;
-
-    text-align:center;
-
-    color:var(--gray);
-
-}
-
-/*==========================
-CARDS
-==========================*/
-
-.cards{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:35px;
-
-    margin-top:50px;
-
-}
-
-.card{
-
-    background:white;
-
-    border-radius:22px;
-
-    overflow:hidden;
-
-    box-shadow:var(--shadow);
-
-    transition:.35s;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    color:inherit;
-
-}
-
-.card:hover{
-
-    transform:translateY(-12px);
-
-}
-
-.card img{
-
-    width:100%;
-
-    height:280px;
-
-    object-fit:cover;
-
-}
-
-.card h3{
-
-    padding:20px 20px 10px;
-
-}
-
-.card p{
-
-    padding:0 25px 30px;
-
-    color:var(--gray);
-
-}
-
-/*==========================
-CONTATO
-==========================*/
-
-.mapas{
-
-    margin-top:35px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:25px;
-
-    flex-wrap:wrap;
-
-}
-
-.mapas a{
-
-    padding:14px 24px;
-
-    border-radius:50px;
-
-    background:white;
-
-    text-decoration:none;
-
-    color:var(--primary);
-
-    box-shadow:var(--shadow);
-
-    transition:.3s;
-
-}
-
-.mapas a:hover{
-
-    background:var(--primary);
-
-    color:white;
-
-}
-
-/*==========================
-FOOTER
-==========================*/
-
-footer{
-
-    background:#181818;
-
-    color:white;
-
-    text-align:center;
-
-    padding:40px;
-
-}
-
-/*==========================
-ANIMAÃ‡ÃƒO
-==========================*/
-
-.hero,
-.card,
-section{
-
-    animation:fade .8s ease;
-
-}
-
-@keyframes fade{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:none;
-
-    }
-
-}
-
-/*==========================
-RESPONSIVO
-==========================*/
-
-@media(max-width:960px){
-
-.hero{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-.hero p{
-
-margin:auto auto 40px;
-
-}
-
-.hero h1{
-
-font-size:2.8rem;
-
-}
-
-.hero-image img{
-
-width:300px;
-
-}
-
-nav ul{
-
-display:none;
-
-}
-
-}
+</html>
