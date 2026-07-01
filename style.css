@@ -148,7 +148,7 @@ HERO
         rgba(250,248,245,0.75) 65%,
         #faf8f5 100%
     ),
-    url("foto1.jpg");
+    url("FOTO1.jpg");
 
     background-size:cover;
 
@@ -241,6 +241,78 @@ HERO
     margin-top: 30px;
 
 }
+
+/*==========================
+BOTÃO FLUTUANTE WHATSAPP
+==========================*/
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:2rem;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    z-index:9999;
+
+    transition:.3s;
+
+}
+
+
+.whatsapp-float:hover{
+
+    transform:scale(1.12);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.whatsapp-float{
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(37,211,102,.6);
+    }
+
+    70%{
+        transform:scale(1.08);
+        box-shadow:0 0 0 18px rgba(37,211,102,0);
+    }
+
+    100%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
+}
+
 
 
 /*==========================
@@ -561,6 +633,7 @@ nav ul{
 
 display:none;
 
+}
 }
 
 }
